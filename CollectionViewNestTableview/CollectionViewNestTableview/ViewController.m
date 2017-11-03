@@ -71,8 +71,8 @@
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     OrderModel *orderModel = _orderArr[indexPath.row];
     CGFloat height = orderModel.foodModelList.count * 40;
-    if (height<160) {
-        height = 160;
+    if (height<120) {
+        height = 120;
     }
     return CGSizeMake(KW, height);
 }

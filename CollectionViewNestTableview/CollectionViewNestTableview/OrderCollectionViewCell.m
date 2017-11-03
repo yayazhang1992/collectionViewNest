@@ -74,8 +74,8 @@
     _foodDataSource = orderModel.foodModelList;
     NSLog(@"kkkkkk%ld",_foodDataSource.count);
     CGFloat height = orderModel.foodModelList.count * 40;
-    if (height<160) {
-        height = 160;
+    if (height<120) {
+        height = 120;
     }
     [_foodTableView   mas_updateConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.contentView.mas_top).offset(5.0f);
